@@ -1,0 +1,118 @@
+<!-- Start Generation Here -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="preconnect" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator Indo-Inggris</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4; /* Warna latar belakang terang */
+            color: #333; /* Warna teks gelap */
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff; /* Warna biru untuk header */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        main {
+            margin-top: 20px;
+        }
+        section {
+            background: white; /* Latar belakang putih untuk section */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007bff; /* Warna biru untuk judul */
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #28a745; /* Warna hijau untuk tombol */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #218838; /* Warna hijau lebih gelap saat hover */
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Translator Indo-Inggris</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Masukkan Kata</h2>
+            <input type="text" id="inputKata" placeholder="Kata dalam Bahasa Indonesia">
+            <select id="selectBahasa">
+                <option value="id">Bahasa Indonesia</option>
+                <option value="en">Bahasa Inggris</option>
+            </select>
+            <button id="translateButton">Terjemahkan</button>
+            <p id="result"></p>
+        </section>
+    </main>
+    <script>
+        const kamus = {
+            "halo": "hello",
+            "dunia": "world",
+            "kucing": "cat",
+            "anjing": "dog",
+            "buku": "book",
+            "saya": "I",
+            "kamu": "you",
+            "belajar": "learn",
+            "bahasa": "language",
+            "inggris": "english",
+            "indonesia": "indonesian",
+            "makan": "eat",
+            "minum": "drink",
+            "tidur": "sleep",
+            "tidak": "not",
+            "aku": "I",
+            "kamu": "you",
+            "dia": "he/she",
+            "mereka": "they",
+            };
+
+        const bahasa = {
+            "id": "Bahasa Indonesia",
+            "en": "Bahasa Inggris"
+        };
+
+        document.getElementById('translateButton').addEventListener('click', function() {
+            const inputKata = document.getElementById('inputKata').value.toLowerCase();
+            const selectBahasa = document.getElementById('selectBahasa').value;
+            const terjemahan = kamus[inputKata] || "Kata tidak ditemukan";
+            document.getElementById('result').innerText = selectBahasa === 'en' ? terjemahan : inputKata;
+        });
+    </script>
+</body>
+</html>
+<!-- End Generation Here -->
+

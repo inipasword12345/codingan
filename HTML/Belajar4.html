@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edukasi Kesehatan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #121212; /* Hitam AMOLED */
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background: rgba(30, 30, 30, 0.9); /* Warna latar belakang mirip Spotify */
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        h1 {
+            color: #1db954; /* Hijau Spotify */
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #1db954;
+            padding-bottom: 10px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        h1:active {
+            transform: scale(0.95);
+        }
+        h2 {
+            color: #ffffff; /* Putih untuk judul */
+            margin-top: 30px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        h2:active {
+            transform: translateX(10px);
+        }
+        h3 {
+            color: #1db954; /* Hijau Spotify */
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        h3:active {
+            transform: translateY(5px);
+        }
+        .example {
+            background: rgba(255, 255, 255, 0.1); /* Latar belakang transparan */
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            border-left: 5px solid #1db954; /* Garis hijau */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .example:active {
+            transform: scale(0.98);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        }
+        .warning {
+            background-color: #ff4757; /* Merah untuk peringatan */
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .warning:active {
+            transform: scale(0.95);
+            background-color: #e84118; /* Merah lebih gelap saat aktif */
+        }
+        ul {
+            padding-left: 25px;
+        }
+        ul li {
+            margin: 10px 0;
+            color: #ffffff; /* Putih untuk teks daftar */
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        ul li:active {
+            transform: translateX(5px);
+        }
+        ul ul li {
+            color: #b2b2b2; /* Abu-abu untuk sub-daftar */
+        }
+        cite {
+            color: #1db954; /* Hijau Spotify */
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        cite:active {
+            transform: scale(1.1);
+            color: #1ed760; /* Hijau lebih terang saat aktif */
+        }
+        q {
+            font-style: italic;
+            color: #b2b2b2; /* Abu-abu untuk kutipan */
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        q:active {
+            color: #ffffff; /* Putih saat aktif */
+            transform: translateY(2px);
+        }
+        .example p {
+            margin: 10px 0;
+        }
+        .red-text {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Edukasi Kesehatan</h1>
+        
+        <h2>Pentingnya Menjaga Kesehatan:</h2>
+        <div class="example">
+            <p>Menurut <cite>WHO (World Health Organization)</cite>:</p>
+            <q>Kesehatan adalah keadaan sejahtera dari badan, jiwa, dan sosial yang memungkinkan setiap orang hidup produktif secara sosial dan ekonomis. Kesehatan yang baik tidak hanya mencakup tidak adanya penyakit, tetapi juga mencakup keseimbangan emosional dan mental, serta kemampuan untuk berkontribusi dalam masyarakat.</q>
+        </div>
+
+        <h2>Tips Menjaga Kesehatan:</h2>
+        <div class="example">
+            <p><cite>Dr. Michael Smith</cite> menyatakan: <q>Pola hidup sehat adalah kunci utama untuk mencegah berbagai penyakit. Ini mencakup pemilihan makanan yang bergizi, aktivitas fisik yang teratur, serta menjaga kesehatan mental dan emosional. Dengan menerapkan pola hidup sehat, kita dapat meningkatkan kualitas hidup dan memperpanjang usia harapan hidup.</q></p>
+            <p><cite>Kementerian Kesehatan</cite>: <q>Masyarakat perlu menerapkan GERMAS (Gerakan Masyarakat Hidup Sehat), yang merupakan inisiatif untuk mendorong masyarakat agar lebih aktif dalam menjaga kesehatan melalui berbagai kegiatan, seperti olahraga, konsumsi makanan sehat, dan pemeriksaan kesehatan secara berkala.</q></p>
+        </div>
+
+        <h3>Aspek Penting Kesehatan:</h3>
+        <ul>
+            <li>Nutrisi dan Pola Makan
+                <ul>
+                    <li>Makanan seimbang: Mengonsumsi berbagai jenis makanan yang mengandung karbohidrat, protein, lemak sehat, vitamin, dan mineral.</li>
+                    <li>Porsi yang tepat: Mengatur porsi makan agar tidak berlebihan dan sesuai dengan kebutuhan tubuh.</li>
+                    <li>Jadwal makan teratur: Menetapkan waktu makan yang konsisten untuk menjaga metabolisme tubuh.</li>
+                    <li>Konsumsi air putih: Memastikan tubuh terhidrasi dengan baik untuk mendukung fungsi organ dan metabolisme.</li>
+                </ul>
+            </li>
+            <li>Aktivitas Fisik
+                <ul>
+                    <li>Olahraga rutin: Melakukan aktivitas fisik minimal 150 menit per minggu untuk menjaga kebugaran tubuh.</li>
+                    <li>Peregangan: Melakukan peregangan untuk meningkatkan fleksibilitas dan mencegah cedera.</li>
+                    <li>Jalan kaki: Mengintegrasikan jalan kaki dalam rutinitas sehari-hari sebagai bentuk aktivitas fisik yang mudah dilakukan.</li>
+                    <li>Aktivitas aerobik: Melakukan aktivitas yang meningkatkan detak jantung, seperti berlari, bersepeda, atau berenang.</li>
+                </ul>
+            </li>
+            <li>Kesehatan Mental
+                <ul>
+                    <li>Manajemen stres: Mengelola stres dengan teknik relaksasi, seperti yoga atau pernapasan dalam.</li>
+                    <li>Meditasi: Melakukan meditasi untuk meningkatkan konsentrasi dan ketenangan pikiran.</li>
+                    <li>Istirahat cukup: Memastikan tidur yang berkualitas untuk memulihkan energi dan kesehatan mental.</li>
+                    <li>Hubungan sosial yang baik: Menjaga hubungan positif dengan keluarga dan teman untuk mendukung kesehatan mental.</li>
+                </ul>
+            </li>
+            <li>Kebersihan Diri
+                <ul>
+                    <li>Mandi teratur: Menjaga kebersihan tubuh untuk mencegah infeksi dan penyakit.</li>
+                    <li>Cuci tangan: Mencuci tangan secara teratur untuk mengurangi risiko penyebaran penyakit.</li>
+                    <li>Kebersihan gigi dan mulut: Merawat gigi dan mulut dengan menyikat gigi dua kali sehari dan rutin memeriksakan ke dokter gigi.</li>
+                    <li>Kebersihan lingkungan: Menjaga kebersihan lingkungan sekitar untuk menciptakan suasana yang sehat.</li>
+                </ul>
+            </li>
+            <li>Pemeriksaan Kesehatan
+                <ul>
+                    <li>Check-up rutin: Melakukan pemeriksaan kesehatan secara berkala untuk mendeteksi masalah kesehatan sejak dini.</li>
+                    <li>Vaksinasi: Mendapatkan vaksinasi yang diperlukan untuk melindungi diri dari penyakit menular.</li>
+                    <li>Deteksi dini penyakit: Melakukan skrining untuk penyakit tertentu, seperti kanker, untuk meningkatkan peluang pengobatan yang sukses.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p class="warning">Catatan: Selalu konsultasikan dengan tenaga kesehatan profesional untuk saran kesehatan yang lebih spesifik dan sesuai dengan kondisi kesehatan Anda.</p>
+    </div>
+</body>
+</html>

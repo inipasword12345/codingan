@@ -1,0 +1,15 @@
+{
+    "subaru.theme": "Subaru Dark",
+    "subaru.logo": "subaru_logo_dark.png",
+    "subaru.font": "Arial, sans-serif",
+    "subaru.colors": {
+        "background": "#000000", // Hitam
+        "text": "#FFFFFF", // Putih
+        "link": "#1E90FF" // Biru Terang
+    },
+    "subaru.layout": {
+        "header": true,
+        "footer": true,
+        "sidebar": false
+    }
+}
